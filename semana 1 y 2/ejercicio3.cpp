@@ -26,7 +26,7 @@ int CalcularDias(int mes, int numano){
         return 31;
     }
     if(mes == 2){
-    if(Bisiesto(numano) == true) return 23;
+    if(Bisiesto(numano) == true) return 29;
     else return 28;
     }
     return 30;
@@ -34,7 +34,7 @@ int CalcularDias(int mes, int numano){
 
 int main(){
     
-    cout << "Ingrese el año que desea saber: ";
+    cout << "Ingrese el anio que desea saber: ";
     int numano;
     cin >> numano;
     string m[] = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto",

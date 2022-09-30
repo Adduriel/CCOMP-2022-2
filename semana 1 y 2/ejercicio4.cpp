@@ -14,7 +14,7 @@ int mcd(int a, int mod) {
     if (mod == 0) return a;
     return mcd(mod, a % mod);
 }
-bool inverso_prueba(int a, int mod){
+int inverso_prueba(int a, int mod){
     if (mcd(a,mod) != 1){
      return false;
     }
@@ -60,10 +60,10 @@ int main(){
         cin>>mod;
         int inv= inverso_prueba(a,mod);
         if(inv){
-            cout<<"Inverso de "<<a<<": "<<inv<<endl;
+            cout<<"Inverso de "<<a<<" cuando su mod es "<<mod<<": "<<inv<<endl;
         }
         else{
-            cout<<"No existe el inverso de "<<a<<endl;
+            cout<<"No existe el inverso de "<<a<<"cuando su modulo es "<<mod<<endl;
         }
     }
     else{
